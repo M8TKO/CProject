@@ -1,0 +1,44 @@
+@import "colors";
+
+#login {
+    background-image: url("../assets/sl8_burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 4px solid $yellow;
+    
+}
+
+#loginContainer {
+    background-color: $blue;
+    border-radius: 20px;
+    border: 4px solid $bluedark;
+
+     ul a {
+        font-size: 1rem;
+        border-radius: 20px;
+        border: 4px solid $bluedark;
+    }
+
+    .tab-content {
+        background-color: rgb(76, 151, 232);
+        border-radius: 20px;
+       
+        .signIn {
+            font-weight: bold;
+            color: $blue;
+        }
+
+        .form-outline {
+            background-color: #3b71ca;
+
+            > label {
+                color: rgba(8, 19, 117, 0.291);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.h2 {
+    text-align: center;
+}

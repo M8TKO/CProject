@@ -1,0 +1,143 @@
+@import "colors";
+
+.about {
+  width: 100%;
+  background-image: url(../assets/sl8_burger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  > main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    > h1 {
+      font: 500 6rem "Roboto";
+      flex-shrink: 0;
+      text-align: center;
+      color: $red;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      background-color: $yellow;
+      width: 40%;
+      margin-top: 15px;
+      border-radius: inherit;
+    }
+
+    > article {
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(87, 83, 83);
+      border-radius: inherit;
+      > h4 {
+        border: 5px solid $yellow;
+        border-radius: inherit;
+        font: 100 2rem "Roboto";
+        text-transform: uppercase;
+        background-color: $orange;
+        width: 40%;
+        text-align: center;
+        font-family: 'Libre Baskerville', serif;
+        padding: 2rem 0;
+      }
+
+      > p {
+        border: 5px solid $yellow;
+        border-radius: inherit;
+        background-color: $orange;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        word-spacing: 3px;
+        padding: 2rem;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+      }
+
+      > div > a {
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: $yellow;
+        font-size: 1.5rem;
+        transition: all 0.3s;
+        margin: auto;
+        transform: scale(2.5);
+        &:hover {
+          color: $red;
+          transform: scale(3.1);
+        }
+      }
+    }
+
+    > div {
+      border: 5px solid $yellow;
+      padding: 2rem;
+      background-color: $bluedark;
+      color: white;
+      border-radius: 20px;
+      margin-top: 150px;
+      > h2 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      > article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > div {
+          margin: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          > img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+          }
+          > h3 {
+            margin: 1rem;
+          }
+        }
+        > p {
+          margin: 0 1rem;
+          width: 50%;
+          letter-spacing: 2px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 881px) {
+  .about > main {
+    > h1 {
+      font: 100 4rem "Roboto";
+      text-align: center;
+    }
+
+    > article > p {
+      width: 100%;
+    }
+
+    > div > article {
+      flex-direction: column;
+
+      > p {
+        text-align: center;
+      }
+    }
+  }
+}
